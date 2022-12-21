@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    to top right,
+    rgba(127, 223, 164, 0.831),
+    rgba(133, 133, 244, 0.717)
+  );
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ! In order for img's with float to be placed in parent containers without any issues, overflow: hidden must be assigned to the parent container. */
+/* ?URL https://stackoverflow.com/questions/8721001/putting-a-border-around-floating-elements#8721011 */
+.blog-log {
+  padding: 5rem 0;
+  padding-right: 1rem;
+  padding-left: 2rem;
+  border: 2px solid blue;
+  margin: 1rem;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.blog-log-image {
+  vertical-align: top;
+  width: 20%;
+  max-width: 300px;
+}
+
+/* ! To wrap texts around img, float need to be assigned on img. */
+/* ?URL https://www.geeksforgeeks.org/how-to-wrap-the-text-around-an-image-using-html-and-css/ */
+.blog-log-image img {
+  width: 100%;
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.blog-log-title,
+.blog-log-text {
+  text-align: justify;
+}
+

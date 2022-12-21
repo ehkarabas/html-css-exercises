@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <link rel="stylesheet" href="./styles/registerForm.css" />
+    <!-- *GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;700&family=Fira+Code:wght@300;400;700&family=M+PLUS+1+Code:wght@300;400;700&family=Press+Start+2P&family=Raleway:wght@300;400;700&family=Source+Code+Pro:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- *GOOGLE FONTS -->
+  </head>
+
+  <body>
+    <h1>REGISTER PAGE</h1>
+    <!-- novalidate ile validasyon engellenebilir. -->
+    <form action="#" method="get" novalidate>
+      <div>
+        <label for="firstName">First Name : </label>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="Your first name"
+          required
+          class="inputs"
+        />
+      </div>
+      <div>
+        <label for="lastName">Last Name : </label>
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder="Your last name"
+          required
+        />
+      </div>
+      <div>
+        <label for="email">Email : </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your email"
+          required
+        />
+      </div>
+      <div>
+        <label for="pwd">Password : </label>
+        <input
+          type="password"
+          name="password"
+          id="pwd"
+          placeholder="Your password"
+          required
+        />
+      </div>
+      <div>
+        <label for="dob">Day of Birth : </label>
+        <input
+          type="date"
+          name="DoB"
+          min="2020-01-01"
+          value="2022-01-01"
+          id="dob"
+          required
+        />
+      </div>
+      <div>
+        <label for="phone">Phone : </label>
+        <input
+          type="tel"
+          name="tel"
+          id="phone"
+          placeholder="Your phone number"
+          required
+        />
+      </div>
+      <div class="verAlignComment">
+        <label for="address">Address : </label>
+        <textarea name="address" id="address" rows="5"></textarea>
+      </div>
+      <div>
+        <label for="country">Country : </label>
+        <select name="country" id="country">
+          <option value="" disabled selected>Select Country</option>
+          <option value="Turkey">Turkey</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="Germany">Germany</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div>
+        <label for="">Gender : </label>
+        <div class="genderDiv">
+          <input
+            type="radio"
+            name="gender"
+            id="genderMale"
+            value="male"
+            checked
+          />
+          <label for="genderMale">Male</label>
+          <input type="radio" name="gender" id="genderFemale" value="female" />
+          <label for="genderFemale">Female</label>
+        </div>
+      </div>
+      <div>
+        <label for="">Languages : </label>
+        <div class="langDiv">
+          <input type="checkbox" name="langTR" id="langTR" checked />
+          <label for="langTR">Turkish</label>
+          <input type="checkbox" name="langEN" id="langEN" />
+          <label for="langEN">English</label>
+          <input type="checkbox" name="langGR" id="langGR" />
+          <label for="langGR">German</label>
+        </div>
+      </div>
+      <div class="buttonDiv">
+        <input type="submit" value="Save" />
+        <span class="submitBalancer"></span>
+        <input type="reset" value="Clear" />
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- * TAB ICON -->
+    <!-- * EMOJI SOURCE FOR TAB ICON : https://emojipedia.org/ -->
+    <link
+      rel="shortcut icon"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/microsoft/319/cinema_1f3a6.png"
+      type="image/x-icon"
+    />
+    <!-- * GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Roboto&family=Sorts+Mill+Goudy:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- * GOOGLE FONTS -->
+    <!-- * EXTERNAL CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Netflix Survey Clone</title>
+  </head>
+  <body>
+    <div id="container">
+      <header id="header">
+        <h1 id="title">NET<span>FLIX</span></h1>
+        <h3 id="description">
+          Thank you for signing up to Netflix.Tell me more about yourself.
+        </h3>
+      </header>
+      <section id="survey-form-container">
+        <form action="./result.html" method="get">
+          <div class="input-box">
+            <label for="name">Name</label>
+            <br />
+            <input
+              type="text"
+              placeholder="enter your name"
+              name="name"
+              id="name"
+            />
+          </div>
+          <div class="input-box">
+            <label for="age">Age</label>
+            <br />
+            <input type="number" placeholder="age" name="age" id="age" />
+          </div>
+          <div class="input-box">
+            <label for="email">Email</label>
+            <br />
+            <input
+              type="email"
+              placeholder="enter your Email"
+              name="email"
+              id="email"
+            />
+          </div>
+          <div class="input-box">
+            <label for="">Content Type</label>
+            <br />
+            <select name="content" id="dropdown">
+              <option value="movies">Movies</option>
+              <option value="series" selected>Series</option>
+              <option value="tv_shows">TV Shows</option>
+            </select>
+          </div>
+          <div class="input-box" id="checkbox">
+            <label for="">Movie Type</label>
+            <br />
+            <input
+              type="checkbox"
+              name="movie"
+              id="first-check"
+              value="Comedy"
+              checked
+            />
+            <label for="first-check">Comedy</label>
+            <br />
+            <input
+              type="checkbox"
+              name="movie"
+              id="second-check"
+              value="Action"
+            />
+            <label for="second-check">Action</label>
+            <br />
+            <input
+              type="checkbox"
+              name="movie"
+              id="third-check"
+              value="Romance"
+              checked
+            />
+            <label for="third-check">Romance</label>
+          </div>
+          <div class="input-box" id="radio">
+            <label for="">Gender</label>
+            <br />
+            <input
+              type="radio"
+              name="gender"
+              id="first-radio"
+              value="Male"
+              checked
+            />
+            <label for="first-radio">Male</label>
+            <br />
+            <input
+              type="radio"
+              name="gender"
+              id="second-radio"
+              value="Female"
+            />
+            <label for="second-radio">Female</label>
+            <br />
+            <input type="radio" name="gender" id="third-radio" value="Other" />
+            <label for="third-radio">Other</label>
+          </div>
+          <div class="input-box">
+            <label for="feedback">Feedback</label>
+            <br />
+            <textarea
+              name="feedback"
+              id="feedback"
+              placeholder="any comment"
+            ></textarea>
+          </div>
+          <div class="form-submit">
+            <input type="submit" value="Send" id="form-button" />
+            <input type="reset" value="Reset" />
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

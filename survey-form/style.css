@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 1rem 0rem 0rem 1rem;
+}
+
+header h1, header p {
+    margin-bottom: 0.5rem;
+}
+
+main form {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem ;
+}
+
+main form div.options div.busyness input:nth-child(even){
+    background-color: #f4f4f4;
+    border: 1px dashed rgba(113, 123, 123, 0.2);
+}
+
+main form div.options div.busyness input:nth-child(odd){
+    background-color: #a0939395;
+    border: 1px dashed rgba(113, 123, 123, 0.2);
+}
+
+main form div.inputs label {
+    font-family: 'Bebas Neue', cursive!important;
+}
+
+div#name-input,
+div#surname-input,
+div#email-input{
+    margin-bottom: 0.5rem;
+    line-height: inherit;
+}
+
+div#name-input input,
+div#surname-input input,
+div#email-input input {
+    display: block;
+    margin-top: 0.5rem;
+    padding: 0.1rem 0.2rem;
+    line-height: inherit;
+    min-width: 15rem;
+}
+
+div.inputs,
+div.options {
+    margin-bottom: 2rem;
+}
+
+div.busyness,
+div.recommend,
+div.suggestion {
+    margin-bottom: 1rem;
+}
+
+div p:nth-child(1) {
+    margin-bottom: 1rem;
+}
+
+div.comments textarea{
+    width: 15rem;
+    height: 10rem;
+    resize: none;
+    overflow: scroll;
+}
+
+div#buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 15rem;
+}
+
+div#buttons input{
+    display: inline-block;
+    width: auto;
+    margin-bottom: 0.5rem;
+}
+
+div.busyness select{
+    width: 15rem;
+}
+
+input[type="submit"]:hover {
+    background-color: green;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+input[type="reset"]:hover {
+    background-color: red;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+input[type="submit"]:active {
+    background-color: blue;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+input[type="reset"]:active {
+    background-color: gray;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+

@@ -1,0 +1,121 @@
+/* *GOOGLE FONTS */
+/*
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Roboto&family=Sorts+Mill+Goudy:ital@1&display=swap');
+*/
+
+/*
+font-family: 'Bowlby One SC', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Sorts Mill Goudy', serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/background_image.jpg);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+#container {
+  max-width: 1240px;
+  /* height: 1036px; */
+  /* background-color: hsla(0, 0%, 0%, 0.3); */
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 30px auto;
+  padding-bottom: 1px;
+}
+
+#title {
+  font-size: 3.1rem; /* 50 / 16 = 3.1*/
+  font-family: "Bowlby One SC", cursive;
+  letter-spacing: 0.05em;
+}
+
+span {
+  color: red;
+}
+
+#description {
+  font-family: "Sorts Mill Goudy", serif;
+}
+
+#header {
+  text-align: center;
+}
+
+#survey-form-container {
+  width: 500px;
+  /* border: 2px solid red; */
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: auto;
+  padding: 30px 40px;
+  margin-bottom: 30px;
+}
+
+textarea {
+  resize: none;
+}
+
+#name,
+#age,
+#email,
+#dropdown,
+#feedback {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.input-box {
+  /* border: 2px solid red; */
+  margin-top: 10px;
+}
+
+#radio,
+#checkbox {
+  margin-top: 40px;
+  /* border: 2px solid green; */
+}
+
+/* !Centering inline, inline-block elements */
+.form-submit #form-button {
+  width: 160px;
+  height: 45px;
+  background-color: red;
+  color: white;
+  border-radius: 50px;
+  display: inline;
+  /* !1.)Converting to block and assigning margin:auto. */
+  /* display: block;
+  margin: auto; */
+}
+
+.form-submit input[type="reset"] {
+  display: none;
+}
+
+/* !2.)Assigning width:fit-content and margin:auto to the parent container. */
+/* .form-submit {
+  border: 2px solid aqua;
+  width: fit-content;
+  margin: auto;
+} */
+
+/* !3.)Assigning text-align:center to the parent container. */
+.form-submit {
+  /* border: 2px solid aqua; */
+  text-align: center;
+}
+
+/* input[type="radio"] {
+  accent-color: red;
+} */
+

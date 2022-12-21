@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form Exercise</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Open+Sans:wght@400;700&family=Yellowtail&display=swap" rel="stylesheet">
+        <!-- Fonts Usage -->
+        <!-- font-family: 'Bebas Neue', cursive; -->
+        <!-- font-family: 'Lobster', cursive; -->
+        <!-- font-family: 'Open Sans', sans-serif; -->
+        <!-- font-family: 'Yellowtail', cursive; -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>CoolCompany Survey Form</h1>
+        <p>Thank you for taking the time to help us improve our services.</p>
+    </header>
+
+    <main>
+        <form action="./results.html">
+            <div class="inputs">
+                <div id = "name-input">
+                    <label for="name">Name</label> <br>
+                    <input type="text" name="Name" id="name" placeholder="Enter your name">
+                </div>
+                <div id = "surname-input">
+                    <label for="surname">Surname</label> <br>
+                    <input type="text" name="Surname" id="surname" placeholder="Enter your surname">
+                </div>
+                <div id = "email-input">
+                    <label for="email">Email</label> <br>
+                    <input type="email" name="Email" id="email" placeholder="user@coolcompany.com">
+                </div>
+            </div>
+            <div class="options">
+                <div class="busyness">
+                    <p>Which option describes your current busyness best?</p>
+                    <select name="Busyness" id="busyness">
+                        <option selected disabled>Select current busyness</option>
+                        <option value="Student">Student</option>
+                        <option value="ITManager">IT Manager</option>
+                        <option value="FT-IT">Full Time IT</option>
+                        <option value="FT-Others">Full Time Others</option>
+                        <option value="PT-IT">Part Time IT</option>
+                        <option value="PT-OTHERS">Part Time Others</option>
+                        <option value="No-to-say">Prefer not to say</option>
+                    </select>
+                </div>
+                <div class="recommend">
+                    <p>Would you recommend CoolCompany to a friend?</p>
+                    <div class="radio">
+                        <input type="radio" name="Recommend" id="defyes" value="DefinitelyYes">
+                        <label for="defyes">Definetely, Yes</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="Recommend" id="maybe" value="Maybe">
+                        <label for="maybe">Maybe</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="Recommend" id="notsure" value="NotSure">
+                        <label for="notsure">Not sure</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="Recommend" id="defno" value="DefinitelyNo">
+                        <label for="defno">Definitely, No</label>
+                    </div>
+                </div>
+                <div class="suggestion">
+                    <p>Which departments of us would you like to see improved?(Check all that apply)</p>
+                    <div class="checkbox">
+                        <input type="checkbox" name="Front-endProjects" id="frontend">
+                        <label for="frontend">Front-end Proejects</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="Back-endProjects" id="backend">
+                        <label for="backend">Back-end Proejects</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="DataScience" id="datascience">
+                        <label for="datascience">Data Science</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="DevOps" id="devops">
+                        <label for="devops">DevOps</label>
+                    </div>
+                </div>
+            </div>
+            <div class="comments">
+                <p>Any comments or suggestions?</p>
+                <textarea name="Comments" id="comments" placeholder="Enter your comment here... Thanks for your comments..."></textarea>
+            </div>
+            <div id="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

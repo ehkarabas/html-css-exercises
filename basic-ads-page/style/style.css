@@ -1,0 +1,110 @@
+/* INTEGRATED FONTS */
+/* @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Rubik+Vinyl&display=swap'); */
+/* font-family: 'EB Garamond', serif;
+font-family: 'Rubik Vinyl', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* *A value of 0deg is equivalent to "to top". A value of 90deg is equivalent to "to right". A value of 180deg is equivalent to "to bottom". */
+/* *URL  https://www.w3schools.com/css/css3_gradients.asp*/
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 83, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; */
+  font-family: "Times New Roman", Times, serif;
+  color: #fff;
+}
+
+header .page-title {
+  font-family: "Rubik Vinyl", cursive;
+  font-size: 5rem;
+  text-align: center;
+  letter-spacing: 0.4rem;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+/* ! To cover float img's without overflow from their parent container, overflow:hidden should be used on parent container. */
+/* ?URL https://stackoverflow.com/questions/8721001/putting-a-border-around-floating-elements#8721011 */
+section {
+  margin: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/* ! To wrap text around img's, float should be used on the img. */
+/* ?URL https://www.geeksforgeeks.org/how-to-wrap-the-text-around-an-image-using-html-and-css/ */
+section img {
+  float: left;
+  width: 30%;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* !Not to spoil resolution, max-content can be used when defining height based on width(or vice versa). */
+section img:hover {
+  cursor: pointer;
+  width: max-content;
+  height: 15rem;
+}
+
+section h2 {
+  font-family: "EB Garamond", serif;
+  color: sandybrown;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+section p {
+  text-indent: 1rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  text-align: justify;
+  line-height: 1.25rem;
+}
+
+section p::first-letter {
+  font-size: 125%;
+  font-style: italic;
+  font-weight: bold;
+  margin-right: 0.075rem;
+}
+
+section button {
+  float: right;
+  margin-top: 0.5rem;
+  border: none;
+  width: 6rem;
+  height: 2rem;
+  background-color: coral;
+  border-radius: 0.4rem;
+}
+
+section button:hover {
+  width: 8rem;
+  height: 2.5rem;
+}
+
+section button a {
+  text-decoration: none;
+  color: #fff;
+}

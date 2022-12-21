@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Exercise</title>
+    <!-- CSS File for Mobiles Only -->
+    <link rel="stylesheet" media="(max-width:470px)" href="style.css">
+    <style>
+        form {
+            width: 95%;
+            margin: auto;
+        }
+        div.encapsulate {
+            width: 95%;
+            margin: auto;
+            border-style: solid solid hidden hidden;
+
+        }
+        .title {
+            text-align: center;
+        }
+        .flex {
+            display: flex;
+            flex-direction: row; 
+            justify-content: start;
+            gap: 0.5em;
+        }
+        .label {
+            flex-direction: column; 
+            justify-content: space-around;
+        }
+        .input {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        #agreement {
+            resize: none;
+            min-width: 300px;
+            min-height: 100px;
+        }
+        #prog_langs{
+            margin: 2em 0;
+        }
+    </style>
+</head>
+<body>
+    <div class = "encapsulate">
+        <form action="./result.html">
+            <h1 class="title">TEST Design Program Installation and Sales Agreement</h1>
+            <div>
+                <fieldset>
+                    <legend><b>Agreement Approval</b></legend>
+                    <input type="checkbox" name="Accept" id="accept">
+                    <label for="accept">I accept that the following information is correct and I confirm the agreement.</label>
+                    <br>
+                    <div style="margin-top: 10px;">
+                        <input type="submit" value="Save Form">
+                        <input type="reset" value="Reset Form">
+                    </div>
+                </fieldset>
+            </div>
+    
+            <div>
+                <fieldset class="flex" style>
+                    <legend><b>Personal Information</b></legend>
+                    <div class="label flex">
+                        <label for="formid">Form ID</label>
+                        <label for="name">Name</label>
+                        <label for="surname">Surname</label>
+                        <label for="age">Age</label>
+                        <label for="mail">E-mail</label>
+                        <label for="photo"><span id="span-changeable">Add a </span>Photo</label>
+                    </div>
+    
+                    <div class="input flex responsive-input">
+                        <input type="text" name="Form_ID" id="formid" value="AFORMID" disabled>
+                        <input type="text" name="Name" id="name" placeholder="Input your name">
+                        <input type="text" name="Surname" id="surname" placeholder="Input your surname">
+                        <input type="number" name="Age" id="age" placeholder="Your Age" step="1" min="12" max="90" style="width: 30%;">
+                        <input type="email" name="E-mail" id="mail" placeholder="Input your e-mail address">
+                        <input type="file" name="Photo" id="photo">
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend><b>Other Informations</b></legend>
+                    <div class="input flex">
+                        <p style="margin-left: 5%; margin-right:auto;">These fields refers to professional experience.</p>
+                        <div class="flex">
+                            <div class="label flex" style="margin-right: 10%;">
+                                <label for="carreerstart">Start Date of Professional Experience</label>
+                                <p style="margin: 1.5em 0;">Professional Experience</p>
+                                <label for="languages" id = "prog_langs">Programming Languages</label>
+                            </div>
+    
+                            <div class="input flex">
+                                <input type="date" name="Carreer_Start" id="carreerstart" min="2022-01-01" max="2022-08-03">
+
+                                <div>
+                                    <input type="radio" name="Experience" id="1_5" value="1-5 years">
+                                    <label for="1_5">1-5 years</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="Experience" id="6_10" value="6-10 years">
+                                    <label for="6_10">6-10 years</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="Experience" id="11_15" value="11-15 years">
+                                    <label for="11_15">11-15 years</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="Experience" id="15plus" value="15 +">
+                                    <label for="15plus">15 +</label>
+                                </div>
+
+                                <select name="Programming_Languages" id="languages" size="5" multiple>
+                                    <option value="C#">C#</option>
+                                    <option value="PHP">PHP</option>
+                                    <option value="Java">Java</option>
+                                    <option value="JS">JavaScript</option>
+                                    <option value="Python">Python</option>
+                                    <option value="C++">C++</option>
+                                    <option value="Dart">Dart</option>
+                                    <option value="Go">Go</option>
+                                    <option value="Flutter">Flutter</option>
+                                    <option value="Swift">Swift</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend><b>Agreement Copy</b></legend>
+                    <textarea class="responsive-textarea" name="Agreement" id="agreement" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus quis deserunt, ducimus est repellendus voluptatum, architecto commodi fugit ut dolorem eos. Accusantium quas rerum voluptate pariatur dolorum, porro autem corporis fuga iste saepe nemo vero laboriosam error voluptatum beatae, eius eligendi ut aliquid dolor ex. In vitae adipisci dolor saepe, necessitatibus eveniet provident perspiciatis ipsa, error sint ex. Dolorem autem odio non, earum, veritatis porro eos voluptate eius aliquid ea vel, laudantium nostrum. Accusamus vel nihil obcaecati reiciendis maxime, corporis, id doloribus mollitia vero omnis dignissimos voluptatem perspiciatis, magni unde tempore sequi minima qui aliquam eligendi eum at quod?</textarea>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend><b>Mailing List</b></legend>
+                    <label for="mailing_approval">I <b>want</b> to join mailing list</label>
+                    <input type="radio" name="Mailing_Approval" id="mailing_approval" value="yes">
+                    <br>
+                    <label for="mailing_denial">I <b>don't want</b> to join mailing list</label>
+                    <input type="radio" name="Mailing_Approval" id="mailing_denial" value="no">
+                </fieldset>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

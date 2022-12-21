@@ -1,0 +1,121 @@
+/* *GOOGLE FONTS */
+/* @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;700&family=Fira+Code:wght@300;400;700&family=M+PLUS+1+Code:wght@300;400;700&family=Press+Start+2P&family=Raleway:wght@300;400;700&family=Source+Code+Pro:wght@300;400;700&display=swap'); */
+
+/* 
+font-family: 'Encode Sans', sans-serif;
+font-family: 'Fira Code', monospace;
+font-family: 'M PLUS 1 Code', sans-serif;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Source Code Pro', monospace;
+*/
+/* *GOOGLE FONTS */
+
+* {
+  /* crushing default positionings */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'Press Start 2P', cursive; */
+  font-family: "Fira Code", monospace;
+  background-image: url(https://cdn.pixabay.com/photo/2017/02/18/08/47/water-2076827_1280.jpg);
+  background-repeat: no-repeat;
+  /* !In background image, without using "Background-Position"; when "Background-Size: Cover", "Background-Repeat: No-Repeat" and "Height: 100VH" are assigned, it covers without any issue. */
+  /* background-position: center center; */
+  background-size: cover;
+  /* !body has no height in default */
+  height: 100vh;
+  /* ?%100 of visible area of browser height */
+}
+
+h1 {
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  padding-top: 2rem;
+  /* Using padding instead of margin prevents a possible vertical scroll. */
+}
+
+form {
+  background-image: linear-gradient(
+    0deg,
+    rgb(129, 163, 202) 0%,
+    rgb(137, 242, 198) 100%
+  );
+  width: fit-content;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* *Label is an inline element, width property does not work directly on it. */
+
+label {
+  display: inline-block;
+  width: 9rem;
+}
+
+.genderDiv,
+.langDiv {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.genderDiv label,
+.langDiv label {
+  width: auto;
+  margin-right: 1rem;
+}
+
+/* ?URL CSS element exclusion: https://www.geeksforgeeks.org/how-to-exclude-particular-class-name-from-css-selector/ */
+input:not(.genderDiv input, .langDiv input, .buttonDiv input),
+select,
+textarea {
+  display: inline-block;
+  width: 18rem;
+  padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.buttonDiv {
+  text-align: center;
+}
+
+.buttonDiv input {
+  width: 6rem;
+  padding: 1rem 0rem;
+  margin-right: auto;
+  background-color: hsl(299, 100%, 70%);
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.buttonDiv input:hover {
+  background-color: hsl(299, 100%, 40%);
+  color: aliceblue;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submitBalancer {
+  display: inline-block;
+  visibility: hidden;
+  width: 1rem;
+}
+
+.verAlignComment * {
+  vertical-align: middle;
+}
+
+textarea {
+  resize: none;
+  /* overflow-y: scroll; */
+  /* Show vertical scrollbar */
+}
