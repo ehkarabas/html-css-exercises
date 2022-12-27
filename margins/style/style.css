@@ -1,0 +1,87 @@
+/*  * CDNFONTS */
+
+/* @import url("https://fonts.cdnfonts.com/css/lucida-console"); */
+
+/* font-family: 'Lucida Console', sans-serif; */
+
+/*  * GOOGLE FONTS */
+/* @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@900&family=Fira+Code&family=Fira+Mono:wght@700&family=Martian+Mono:wght@500&display=swap'); */
+
+/* font-family: 'Azeret Mono', monospace;
+font-family: 'Fira Code', monospace;
+font-family: 'Fira Mono', monospace;
+font-family: 'Martian Mono', monospace; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header {
+  position: relative;
+  top: 6rem;
+  left: 50%;
+  transform: translate(-5rem, 0);
+  z-index: 1;
+}
+
+header img {
+  height: 10rem;
+  border: 2px solid #2c2c2c;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+main {
+  width: 80%;
+  position: relative;
+  top: 1rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  padding: 0 2rem;
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+  background-color: #dc6c5e;
+  border: 2px solid #2c2c2c;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 7px #2c2c2c;
+}
+
+.card-title {
+  font-family: "Azeret Mono", monospace;
+  font-weight: bold;
+}
+
+.card-title span {
+  color: yellow;
+}
+
+.card-content {
+  font-family: "Martian Mono", monospace;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #2c2c2c;
+}
+
+.card-info {
+  font-family: "Fira Code", monospace;
+}
+
+footer.card-info {
+  width: 80%;
+  position: relative;
+  top: 4rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}

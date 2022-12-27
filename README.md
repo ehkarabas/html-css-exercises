@@ -44,5 +44,8 @@
 	<a href="https://ehkarabas.github.io/html-css-exercises/comments-board/">
 		<img src="https://img.shields.io/badge/comments%20board-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
+	<a href="https://ehkarabas.github.io/html-css-exercises/margins/">
+		<img src="https://img.shields.io/badge/margins-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
+	</a>
 </div>
 
