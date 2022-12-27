@@ -1,0 +1,178 @@
+/* GOOGLE FONTS */
+
+/* 
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+*/
+
+/* 
+font-family: 'DynaPuff', cursive;
+font-family: 'Open Sans', sans-serif;
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* !---HEADER--- */
+
+header {
+  background-image: linear-gradient(to top, rgba(134, 231, 214, 1), #fff);
+  padding: 1rem;
+}
+
+header > a img {
+  width: 90px;
+}
+
+header > .sign-in {
+  float: right;
+  list-style: none;
+  margin-top: 35px;
+  font-family: "Open Sans", sans-serif;
+}
+
+header > .sign-in li {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+header > .sign-in li a {
+  text-decoration: none;
+  color: #920101;
+  font-weight: 700;
+}
+header > .sign-in li a:hover {
+  border-bottom: 2px solid #920101;
+}
+
+/* !---NAV STICKY--- */
+
+nav.sticky {
+  position: sticky;
+  top: 0;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background: linear-gradient(
+    to right,
+    #fdc830,
+    rgb(249, 108, 207)
+  );  */
+  background-image: linear-gradient(
+    to right,
+    rgba(83, 138, 214, 1),
+    rgba(134, 231, 214, 1)
+  );
+  padding: 1rem;
+  z-index: 1;
+}
+
+nav.sticky > ul {
+  text-align: center;
+  list-style: none;
+  padding: 1rem;
+  font-family: "DynaPuff", cursive;
+}
+
+nav.sticky > ul li {
+  display: inline-block;
+  margin-left: 3rem;
+}
+
+nav.sticky > ul li a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 1.5px;
+}
+nav.sticky > ul li a:hover {
+  color: #fff;
+}
+
+/* !---NAV BANNER--- */
+
+nav.banner {
+  position: relative;
+}
+
+nav.banner > img {
+  width: 100%;
+  max-height: calc(100vh - 215px);
+}
+
+nav.banner > .hero {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  transform: translate(0%, -50%);
+  left: 2rem;
+}
+
+.hero > h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0px 2px 4px black;
+}
+
+.hero > p {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0px 2px 4px grey;
+}
+
+.hero > .banner--button {
+  padding: 0.7rem;
+  background-color: #d9afd9;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+}
+
+.hero > .banner--button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  box-shadow: 0.1px 0.1px 10px 5px rgba(255, 255, 255, 0.5),
+    0.2px 0.2px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* !---MAIN--- */
+
+main {
+  padding: 2rem;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* !---FIXED BUTTON--- */
+.google {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: red;
+  border: 2px solid red;
+  border-radius: 50%;
+  padding-top: 0.37rem;
+  padding-left: 0.4rem;
+}
+
+.google > a > i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.google:hover {
+  color: #fff;
+  border-color: magenta;
+  background-color: magenta;
+  outline: 2px solid magenta;
+  outline-offset: 0.2rem;
+}
+
+.google > a > i:hover {
+  cursor: pointer;
+}
