@@ -1,0 +1,126 @@
+/* * GOOGLE FONTS */
+/* @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); */
+
+/* font-family: 'Lato', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+/* ?URL https://www.w3schools.com/cssref/pr_background-attachment.php */
+.page {
+  position: relative;
+  min-height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.page1,
+.page5 {
+  min-height: 100vh;
+  background-image: url(../images/bg.jpg);
+}
+
+.page2 {
+  background-image: url(../images/bg2.jpg);
+}
+
+.page3 {
+  background-image: url(../images/bg3.jpg);
+}
+
+.page4 {
+  background-image: url(../images/bg4.jpg);
+}
+
+.central-container {
+  width: max-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.company-logo {
+  width: 40vw;
+}
+
+.motto {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 2rem;
+  outline-width: 0.5rem;
+  outline-style: inset;
+  outline-color: purple;
+  outline-offset: 1rem;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  letter-spacing: 0.5rem;
+  word-wrap: normal;
+}
+
+.motto p {
+  font-size: 3rem;
+}
+
+.info-card {
+  min-height: 20vh;
+  padding: 3rem 5rem;
+}
+
+.info-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.info-content {
+  line-height: 1.7rem;
+}
+
+.page3 .motto {
+  padding: 1rem 0.5rem;
+}
+
+@media (max-width: 760px) {
+  .central-container {
+    width: 70vw;
+  }
+
+  .company-logo {
+    width: 70vw;
+  }
+
+  .motto {
+    outline-offset: 0.6rem;
+  }
+
+  .motto p {
+    font-size: 2rem;
+  }
+
+  .info-content {
+    line-height: 1.2rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .central-container {
+    width: 80vw;
+  }
+
+  .company-logo {
+    width: 80vw;
+  }
+}
