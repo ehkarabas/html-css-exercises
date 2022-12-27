@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+
+body {
+  min-height: 100vh;
+  background-color: black;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+main {
+  position: relative;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-variant: small-caps;
+  padding: 0.5rem 0;
+  color: orange;
+  background-color: rgba(10, 57, 45);
+}
+
+#brand {
+  max-height: 1.5rem;
+  vertical-align: bottom;
+}
+
+nav {
+  background-color: lightgrey;
+  padding: 0.5rem 0;
+  border-bottom: 5px solid rgba(250, 235, 215, 0.484);
+  border-top: 2px solid rgba(10, 57, 45, 0.546);
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  margin-left: 40px;
+  vertical-align: middle;
+
+  /* float: right; */
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+label {
+  color: white;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+textarea {
+  width: 100%;
+  resize: none;
+}
+input {
+  width: 100%;
+}
+
+button {
+  background-color: orange;
+  border-radius: 1rem;
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: olive;
+}
+
+.comments-container {
+  /* background-color: rgba(0, 0, 0, 0.21); */
+  color: white;
+  padding: 1rem;
+  position: relative;
+  z-index: 2;
+  overflow: none;
+}
+
+.comments {
+  margin: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding: 1rem;
+  position: relative;
+  height: 7rem;
+  overflow: auto;
+}
+
+.avatar {
+  height: 3.5rem;
+  width: 3.5rem;
+  position: sticky;
+  top: 0.2rem;
+  left: 0;
+}
+
+.comment {
+  position: absolute;
+  top: 1rem;
+  left: 5.5rem;
+  /* text-align: justify; */
+  padding-right: 1rem;
+}
+
+.comment-left div:nth-of-type(odd) {
+  background-color: rgb(10, 57, 45);
+}
+
+.comment-left div:nth-of-type(even) {
+  border: 2px solid rgb(10, 57, 45);
+  background-color: rgba(46, 67, 86, 0.95);
+}
+
+.comment-header {
+  margin-left: 1rem;
+}
+
+.comment-left {
+  width: 60%;
+}
+
+.comment-right {
+  width: 35%;
+  background-color: rgb(10, 57, 45);
+  position: absolute;
+  top: 3.3rem;
+  right: 2.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+/* ?Centering a div horizontally and vertically */
+/* *URL https://www.freecodecamp.org/news/how-to-center-a-div-with-css-10-different-ways#1-how-to-use-position-relative-absolute-and-top-left-offset-values */
+.comment-cards {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -100%);
+  width: 100vw;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.image1 {
+  width: 20%;
+}
+
+.image2 {
+  width: 20%;
+  position: absolute;
+  left: 7%;
+  top: 3rem;
+}
+.image3 {
+  position: absolute;
+  width: 40%;
+  left: 14%;
+  top: 4rem;
+  z-index: 1;
+}
+
+@media screen and (max-width: 950px) {
+  .comment-left {
+    width: auto;
+  }
+
+  .comment-right {
+    width: auto;
+    background-color: rgb(10, 57, 45);
+    position: static;
+    margin: 1rem;
+    margin-top: 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    z-index: 1;
+  }
+
+  .comment-cards {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  nav {
+    text-align: center;
+  }
+  li {
+    margin-left: 10px;
+  }
+}
