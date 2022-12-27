@@ -53,5 +53,8 @@
 	<a href="https://ehkarabas.github.io/html-css-exercises/demo-site/">
 		<img src="https://img.shields.io/badge/demo%20site-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
+	<a href="https://ehkarabas.github.io/html-css-exercises/hopping-car/">
+		<img src="https://img.shields.io/badge/hopping%20car-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
+	</a>
 </div>
 
