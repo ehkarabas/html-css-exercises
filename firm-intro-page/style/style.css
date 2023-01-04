@@ -1,0 +1,203 @@
+/* *IMPORT VARIABLES LIBRARY */
+@import "./library.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--white);
+  font-family: var(--ff-roboto);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+header > section.firm-logo {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+header > section.firm-logo > h1 {
+  font-size: var(--fs-3xl);
+  font-family: var(--ff-pt);
+  white-space: nowrap;
+}
+
+header > section.firm-logo > h1 > span.firm-name {
+  color: var(--blue-light-1);
+}
+
+header > section.firm-logo > h1 > span.short-text {
+  display: none;
+}
+
+header > section.firm-logo > img {
+  width: 100px;
+}
+
+button {
+  border: 2px solid var(--orange-light);
+  border-radius: 5px;
+  box-shadow: var(--shadow-light);
+  padding: 1rem 1.2rem;
+  font-family: var(--ff-yeon);
+  font-size: var(--fs-lg);
+  margin: 1rem 0.5rem;
+  white-space: nowrap;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  transform: scale(0.97);
+}
+
+.btn-light {
+  background-color: var(--green-light);
+  color: var(--red-dark);
+}
+
+.btn-dark {
+  background-color: var(--blue-1);
+  color: var(--white);
+}
+
+nav.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1rem;
+  text-align: justify;
+}
+
+nav.hero > section {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+nav.hero > section > img {
+  width: 100%;
+}
+
+nav.hero > section > h1 {
+  font-size: var(--fs-lg);
+  line-height: var(--line-h-xl);
+}
+
+nav.hero > section > p {
+  font-size: var(--fs-md);
+  line-height: var(--line-h-xl);
+}
+
+main > section.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  border: 20px;
+  box-shadow: var(--shadow-light);
+  padding: 1rem;
+  column-gap: 1rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+}
+
+main > section.card > article,
+main > section.card > section {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+main > section.card > section > img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+main > section.card:nth-child(odd) {
+  flex-direction: row;
+}
+
+main > section.card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* @media screen and (min-width: 1200px) and (max-width: 1400px) {
+  body {
+    background-color: var(--red-dark);
+  }
+} */
+
+/* @media screen and (max-width: 1200px) {
+  body {
+    background-color: var(--purple);
+  }
+} */
+
+@media screen and (max-width: 800px) {
+  /* body {
+    background-color: var(--blue-2);
+  } */
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header > section > img {
+    max-width: 300px;
+  }
+
+  header > section > button {
+    margin: 0.5rem;
+  }
+
+  nav.hero {
+    flex-direction: column;
+  }
+
+  nav.hero > section {
+    text-align: center;
+  }
+
+  main > section.card:nth-child(odd) {
+    flex-direction: column;
+  }
+
+  main > section.card:nth-child(even) {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header > section.firm-logo > h1 {
+    font-size: 2.8rem;
+    /* white-space: normal; */
+  }
+
+  header > section.firm-logo > h1 > span.full-text {
+    display: none;
+  }
+
+  header > section.firm-logo > h1 > span.short-text {
+    display: inline-block;
+  }
+
+  header > section.firm-logo > img {
+    width: 90px;
+  }
+}
