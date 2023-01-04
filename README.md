@@ -57,7 +57,7 @@
 		<img src="https://img.shields.io/badge/hopping%20car-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
 	<a href="https://ehkarabas.github.io/html-css-exercises/firm-intro-page/">
-		<img src="https://img.shields.io/badge/live-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
+		<img src="https://img.shields.io/badge/firm%20intro-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
 </div>
 
