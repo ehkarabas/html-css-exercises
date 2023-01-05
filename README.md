@@ -65,5 +65,8 @@
 	<a href="https://ehkarabas.github.io/html-css-exercises/grid-calculator/">
 		<img src="https://img.shields.io/badge/grid%20calculator-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
+	<a href="https://ehkarabas.github.io/html-css-exercises/layout-with-grid/">
+		<img src="https://img.shields.io/badge/layout%20with%20grid-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
+	</a>
 </div>
 

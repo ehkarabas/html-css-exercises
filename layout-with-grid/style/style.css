@@ -1,0 +1,71 @@
+/* *INITIAL LAYOUT */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* *SETTING FULL PAGE LAYOUT */
+body,
+div.grid-container {
+  height: 100vh;
+}
+
+/* *GRID CONTAINER */
+div.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 250px 1fr 4fr 1fr;
+}
+
+/* *PADDING FOR GRID ITEMS*/
+div.grid-container > nav,
+div.grid-container > aside,
+div.grid-container > main,
+div.grid-container > footer {
+  padding: 1rem;
+}
+
+/* *GRID ITEMS */
+div.grid-container > header {
+  /* grid-column: 1 / -1; */
+  grid-column: span 12;
+  grid-row: 1 / 2;
+}
+
+div.grid-container > header > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.grid-container > nav {
+  grid-column: span 12;
+  background-color: lightblue;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+div.grid-container > aside {
+  grid-column: span 3;
+  background-color: wheat;
+}
+
+div.grid-container > aside > ul {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+div.grid-container > aside > ul > li {
+  margin-bottom: 0.5rem;
+}
+
+div.grid-container > main {
+  grid-column: span 9;
+  background-color: aquamarine;
+}
+
+div.grid-container > footer {
+  grid-column: span 12;
+  background-color: beige;
+}
