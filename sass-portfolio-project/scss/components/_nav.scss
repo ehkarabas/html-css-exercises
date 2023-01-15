@@ -1,0 +1,26 @@
+.nav {
+  // border: 2px solid red;
+  height: 10vh;
+  padding: 1rem;
+  // ! & : .nav anlamina gelir.
+  &__list {
+    text-align: right;
+  }
+  &__item {
+    display: inline;
+    padding: 1rem;
+  }
+  &__link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: $font-family;
+    @include transition(1s);
+    &:hover {
+      color: blue;
+    }
+    &--active {
+      color: $secondary-color;
+    }
+  }
+}
