@@ -74,5 +74,8 @@
 	<a href="https://ehkarabas.github.io/html-css-exercises/sass-portfolio-project/">
 		<img src="https://img.shields.io/badge/sass%20portfolio-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
+	<a href="https://ehkarabas.github.io/html-css-exercises/bootstrap-flex-grid/">
+		<img src="https://img.shields.io/badge/bs%20flex%20grid%20ex-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
+	</a>
 </div>
 
