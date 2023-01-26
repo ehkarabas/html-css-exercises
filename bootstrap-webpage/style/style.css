@@ -1,0 +1,149 @@
+html {
+  scroll-padding-top: 70px;
+}
+
+main .banner {
+  height: 100vh;
+  background-image: url("../images/banner.jpeg");
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  overflow: hidden !important;
+}
+
+.service-icon {
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  padding: 1rem !important;
+  color: #fff;
+  background-color: #dc3545;
+  border-radius: 50%;
+}
+
+.service-icon i {
+  position: relative;
+  top: 10px;
+}
+
+#portfolio img {
+  min-height: 200px !important;
+  max-height: 700px !important;
+}
+
+#portfolio .card {
+  min-height: fit-content;
+}
+
+#about img {
+  width: clamp(300px, 50%, 600px);
+}
+
+#staff .member img {
+  width: clamp(200px, 50%, 500px);
+  height: fit-content;
+  border-radius: 50%;
+  border: 10px solid gray;
+}
+
+#staff .socials button {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-color: gray;
+}
+
+#staff .socials button i {
+  position: relative;
+  top: -0.4rem;
+}
+
+#staff .socials button i.fa-twitter {
+  left: -0.4rem;
+}
+
+#staff .socials button i.fa-facebook-f {
+  left: -0.15rem;
+}
+
+#staff .socials button i.fa-linkedin-in {
+  left: -0.25rem;
+}
+
+#staff .socials button:hover {
+  opacity: 0.8;
+}
+
+#contact {
+  background-image: url("../images/map.jpeg");
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  overflow: hidden !important;
+}
+
+#contact #message {
+  height: 190px;
+}
+
+#contact button {
+  width: fit-content;
+}
+
+@media only screen and (max-width: 768px) {
+  #contact form {
+    width: 100% !important;
+    gap: 1rem !important;
+  }
+
+  #contact form > div {
+    gap: 1rem !important;
+  }
+
+  #contact input,
+  #contact textarea {
+    font-size: 1.2rem !important;
+  }
+
+  #contact textarea {
+    height: 170px !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #references img {
+    max-width: 200px;
+  }
+
+  #contact input,
+  #contact textarea {
+    font-size: 1rem !important;
+  }
+
+  #contact textarea {
+    height: 155px !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #contact {
+    padding: 1.5rem !important;
+  }
+
+  #contact form > div {
+    gap: 0.5rem !important;
+  }
+
+  #contact input,
+  #contact textarea {
+    font-size: 0.8rem !important;
+  }
+
+  #contact textarea {
+    height: 140px !important;
+  }
+
+  #contact button {
+    font-size: 0.8rem !important;
+  }
+}
