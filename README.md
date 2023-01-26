@@ -80,5 +80,8 @@
 	<a href="https://ehkarabas.github.io/html-css-exercises/bootstrap-webpage/">
 		<img src="https://img.shields.io/badge/bootstrap%20webpage-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
+	<a href="https://ehkarabas.github.io/html-css-exercises/bootstrap-webpage2/">
+		<img src="https://img.shields.io/badge/bootstrap%20webpage2-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
+	</a>
 </div>
 
